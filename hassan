@@ -1,0 +1,12 @@
+commitgit config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+mkdir test-repo
+cd test-repo
+git init
+echo "hello" > file.txt
+git add .
+git commit -m "My first commit"
+git branch -M main
+git remote add origin https://github.com/yourusername/test-repo.git
+git push -u origin main
